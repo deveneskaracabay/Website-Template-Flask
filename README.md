@@ -1,3 +1,3 @@
 # first-website
 
-Programı **python/flask** ile yazıyorum.
+Bu siteyi profesyonel fotoğrafçı sevgili ağabeyim **Emre Karacabay** için hazırlıyorum. Uygulamayı **python/flask** kullanarak ile yazıyorum. 
