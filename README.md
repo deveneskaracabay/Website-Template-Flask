@@ -1,3 +1,1 @@
-# first-website
-
-Programı **python/flask** ile yazıyorum.
+# Website Project Template
