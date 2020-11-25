@@ -1,0 +1,461 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.insta1_btn {
+    padding: 5px;
+    background: transparent;
+    text-decoration: none;
+    float: right;
+    margin-top: -45px;
+    margin-right: 50px;
+    border-radius: 2px;
+    font-size: 50px;
+    color: #19B3D3;
+    font-weight: 600;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+.insta1_btn:hover {
+    color: RGB(193, 53, 132);
+}
+
+.insta2_btn {
+    background: transparent;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.insta2_btn i {
+    color: #19B3D3;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+.insta2_btn:hover i {
+    color: RGB(193, 53, 132);
+}
+
+#mcheck {
+    display: none;
+}
+
+.sidebar {
+    z-index: 1;
+    background: #0c0c0c;
+    top: 0;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    transition: 0.5s;
+    transition-property: left;
+    overflow-y: auto;
+}
+
+#check:checked~.sidebar .clear {
+    margin-bottom: 40px;
+}
+
+.profile_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .profile_info .profile_image {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.sidebar .profile_info h4 {
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+input[type=text].web {
+    margin-top: 20px;
+    margin-left: 35px;
+    display: block;
+    width: 50%;
+    border: 2px solid #0c0c0c;
+    box-sizing: border-box;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+input[type=text].web:focus {
+    width: 100%;
+    margin-left: 0px;
+    outline: none;
+}
+
+button.web-ara {
+    margin-top: 10px;
+    margin-left: 40px;
+    display: block;
+    width: 30%;
+    color: white;
+    box-sizing: border-box;
+    border: 2px solid #0c0c0c;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: black;
+    padding: 6px 20px 6px 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: all;
+}
+
+button.web-ara:hover {
+    background-color: #19B3D3;
+    color: white;
+}
+
+.sidebar a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.sidebar a:hover {
+    background: #19B3D3;
+}
+
+.sidebar i {
+    padding-right: 10px;
+}
+
+label #sidebar_btn {
+    z-index: 2;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 140px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: all;
+}
+
+label #sidebar_btn:hover {
+    color: #19B3D3;
+}
+
+#check:checked~.sidebar #sidebar_btn {
+    left: 20px;
+}
+
+#check:checked~.sidebar {
+    left: -135px;
+}
+
+#check:checked~.sidebar a span {
+    display: none;
+}
+
+#check:checked~.sidebar a {
+    font-size: 20px;
+    margin-left: 111px;
+    width: 100%;
+}
+
+#check:checked~.content {
+    margin-left: 38px;
+}
+
+#check:checked~.sidebar .profile_info {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.mobile_nav {
+    display: none;
+}
+
+footer {
+    width: 100%;
+    background: #111;
+}
+
+.main-content {
+    display: flex;
+}
+
+.main-content .box {
+    padding: 10px 10px;
+}
+
+.box h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .Fcontent {
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.box .Fcontent:before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+
+.Fcontent p {
+    text-align: justify;
+}
+
+.left .Fcontent .social {
+    margin: 20px 0 0 0;
+}
+
+.left .Fcontent .social a {
+    padding: 0 2px;
+}
+
+.left .Fcontent .social a span {
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .Fcontent .social a span:hover {
+    background: #f12020;
+}
+
+.bottom center {
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+}
+
+.bottom center span {
+    color: #656565;
+}
+
+.bottom center a {
+    color: #f12020;
+    text-decoration: none;
+}
+
+.bottom center a:hover {
+    text-decoration: underline;
+}
+
+#check:checked~.content footer .main-content {
+    padding-left: 25px;
+}
+
+.content {
+    width: (100% - 200px);
+    background-color: #000000;
+    margin-top: 0px;
+    padding: 0px;
+    margin-left: 200px;
+    transition: 0.5s;
+}
+
+.content .gallery {
+    /*margin: .5vw;*/
+    display: -ms-flexbox;
+    -ms-flexbox-wrap: wrap;
+    -ms-flexbox-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+}
+
+.content .gallery div {
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 500px;
+    /*padding-bottom: 5px;*/
+    /*margin: .5vw;*/
+}
+
+.content .gallery div p {
+    padding: 0;
+    text-align: center;
+}
+
+.content .gallery div img {
+    width: 100%;
+    display: block;
+    height: auto;
+    line-height: 0;
+    transition: 0.5s all;
+    border-image-width: 0;
+}
+
+.content .gallery div img:hover {
+    opacity: 0.7;
+    transform: scale(1.01);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 780px) {
+    header {
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
+    #sidebar_btn {
+        display: none;
+    }
+    .content {
+        margin-left: 0;
+        margin-top: 0;
+        /*padding: 10px 20px;*/
+        transition: 0s;
+    }
+    #check:checked~.content {
+        margin-left: 0;
+    }
+    .mobile_nav {
+        z-index: 6;
+        display: block;
+        overflow: auto;
+        width: calc(100% - 0%);
+        position: fixed;
+        left: 0px;
+        top: 0px;
+    }
+    .nav_bar {
+        background: #000000;
+        width: (100% - 0px);
+        margin-top: 0px;
+        min-height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    .nav_bar .mobile_profile_image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .nav_bar .nav_btn {
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+        transition: 0.5s;
+        transition-property: color;
+    }
+    .nav_bar .nav_btn:hover {
+        color: #19B3D3;
+    }
+    .mobile_nav_items {
+        position: fixed;
+        width: calc(100% - 0%);
+        left: calc(100% - 250%);
+        background: #0c0c0c;
+        display: block;
+        transition: all 0.6s;
+    }
+    .mobile_nav_items a {
+        color: #fff;
+        display: block;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 60px;
+        text-decoration: none;
+        box-sizing: border-box;
+        transition: 0.5s;
+        transition-property: background;
+    }
+    .mobile_nav_items a:hover {
+        background: #19B3D3;
+    }
+    .mobile_nav_items a:last-child:hover {
+        background: transparent;
+    }
+    .mobile_nav_items i {
+        padding-right: 10px;
+    }
+    .mform {
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+    }
+    input[type=text].mobile {
+        text-align: center;
+        margin: 10px auto;
+        display: inline-block;
+        width: 30%;
+        border: 2px solid #0c0c0c;
+        box-sizing: border-box;
+        border-radius: 25px;
+        font-size: 18px;
+        background-color: white;
+        padding: 10px 20px 10px 40px;
+        transition: all 0.4s ease-in-out;
+    }
+    input[type=text].mobile:focus {
+        width: 60%;
+        outline: none;
+        margin: 15px auto;
+    }
+    button.mobile-ara {
+        text-align: center;
+        margin: 0 auto;
+        display: inline-block;
+        width: 10%;
+        color: white;
+        box-sizing: border-box;
+        border: 2px solid #0c0c0c;
+        border-radius: 50%;
+        font-size: 16px;
+        background-color: black;
+        padding: 10px 3px;
+        cursor: pointer;
+        transition: 0.5s;
+        transition-property: all;
+    }
+    button.mobile-ara:hover {
+        background-color: #19B3D3;
+        color: white;
+    }
+    button.mobile-ara i {
+        text-align: center!important;
+    }
+    #mcheck:checked~.mobile_nav .mobile_nav_items {
+        left: 0;
+    }
+}
